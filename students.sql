@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2021 at 04:49 AM
+-- Generation Time: Nov 15, 2021 at 04:59 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `students` (
-  `id` int(11) NOT NULL,
+  `idstudents` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `age` int(2) NOT NULL,
   `department` varchar(10) NOT NULL
@@ -38,7 +38,7 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `name`, `age`, `department`) VALUES
+INSERT INTO `students` (`idstudents`, `name`, `age`, `department`) VALUES
 (2, 'Wan Zafirzan', 20, 'JTMK');
 
 --
@@ -49,7 +49,7 @@ INSERT INTO `students` (`id`, `name`, `age`, `department`) VALUES
 -- Indexes for table `students`
 --
 ALTER TABLE `students`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`idstudents`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -59,7 +59,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idstudents` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
